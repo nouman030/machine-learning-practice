@@ -1,170 +1,159 @@
-🤖 Machine Learning & AI Engineering Practice
+# 🤖 Machine Learning & AI Engineering Practice
+
 Welcome to my AI Engineering repository! This project serves as a practical log of my journey through the core concepts of Machine Learning. It includes hands-on implementations of various data preprocessing techniques and ML models, built from the ground up.
 
 This repository is organized to follow a standard ML pipeline, from data processing to model implementation. Each folder contains Jupyter notebooks with clear explanations and code.
 
-📜 Table of Contents
-Repository Structure
+## 📜 Table of Contents
+- [🤖 Machine Learning \& AI Engineering Practice](#-machine-learning--ai-engineering-practice)
+  - [📜 Table of Contents](#-table-of-contents)
+  - [📂 Repository Structure](#-repository-structure)
+  - [📘 Topics Covered](#-topics-covered)
+    - [1. Data Preprocessing](#1-data-preprocessing)
+    - [2. Supervised Learning](#2-supervised-learning)
+    - [3. Unsupervised Learning](#3-unsupervised-learning)
+  - [🛠 Tech Stack](#-tech-stack)
+  - [🚀 Getting Started](#-getting-started)
+  - [📊 Example Output](#-example-output)
+  - [🔮 Future Plans](#-future-plans)
 
-Topics Covered
+---
 
-🛠️ Tech Stack
+## 📂 Repository Structure
 
-🚀 Getting Started
-
-📊 Example Output
-
-⭐ Future Plans
-
-📂 Repository Structure
 The repository is structured logically to reflect the typical machine learning workflow:
 
-├── 0.Data_Prossessing/
-│   ├── missing_data.ipynb
+```bash
+├── Data_Preprocessing/
 │   ├── Encoding.ipynb
 │   ├── Scaling.ipynb
-│   └── outliers.ipynb
-│
-├── 1.supervised models/
-│   ├── 1.liner-regrression.ipynb
-│   ├── 2.polynomial_regression.ipynb
-│   ├── 3.lesso&ridge(L1&L2).ipynb
-│   ├── 4.logistic_regression.ipynb
-│   ├── 5.naive_bayes.ipynb
-│   ├── 6.decision_tree.ipynb
-│   ├── 7.knn.ipynb
-│   └── 8.support_vector_machine.ipynb
-│
-├── 2.unsupervised_models/
-│   └── K-mean-Ex.ipynb
-│
-└── OVERVIEW.md
-✅ Topics Covered
-This repository covers a wide range of fundamental ML concepts and algorithms.
+│   ├── Outliers.ipynb
+│   └── Imputation.ipynb
+├── Supervised_Learning/
+│   ├── Linear_Regression.ipynb
+│   ├── Logistic_Regression.ipynb
+│   ├── Decision_Tree.ipynb
+│   ├── Random_Forest.ipynb
+│   ├── Naive_Bayes.ipynb
+│   ├── SVM.ipynb
+│   └── KNN.ipynb
+├── Unsupervised_Learning/
+│   └── KMeans.ipynb
+└── utils/
+    ├── data_loader.py
+    ├── helpers.py
+    └── __init__.py
+```
 
-🧹 0. Data Preprocessing
+---
+
+## 📘 Topics Covered
+
+This repository covers a wide range of fundamental ML concepts and algorithms:
+
+### 1. Data Preprocessing
 Essential techniques to clean and prepare data for modeling.
+- **Handling Missing Data**: Strategies for imputing missing values using mean, median, and mode.
+- **Feature Encoding**: Converting categorical data into a numerical format.
+  - Label Encoding
+  - Ordinal Encoding
+  - One-Hot Encoding
+  - Binary Encoding
+  - Dummy Variables
+- **Feature Scaling**: Normalizing the range of features to improve model performance.
+  - Standard Scaler
+  - Min–Max Scaler
+  - Robust Scaler
+  - Max Abs Scaler
+- **Outlier Handling**: Techniques for detecting and managing anomalous data points.
 
-Handling Missing Data: Strategies for imputing missing values using mean, median, and mode.
-
-Feature Encoding: Converting categorical data into a numerical format.
-
-Label Encoding
-
-Ordinal Encoding
-
-One-Hot Encoding
-
-Binary Encoding
-
-Dummy Variables
-
-Feature Scaling: Normalizing the range of features to improve model performance.
-
-Standard Scaler
-
-Min-Max Scaler
-
-Robust Scaler
-
-Max Abs Scaler
-
-Outlier Handling: Techniques for detecting and managing anomalous data points.
-
-🧠 1. Supervised Learning
+### 2. Supervised Learning
 Models that learn from labeled data to make predictions.
+- **Regression Models (Predicting Continuous Values)**
+  - Linear Regression (Simple & Multiple)
+  - Polynomial Regression (For non-linear relationships)
+  - Ridge & Lasso Regression (L1 & L2): Regularization techniques to prevent overfitting
 
-Regression Models (Predicting Continuous Values)
-Linear Regression: Simple & Multiple
+- **Classification Models (Predicting Categories)**
+  - Logistic Regression
+  - Naive Bayes (Gaussian, Multinomial, Bernoulli)
+  - Decision Tree
+  - K-Nearest Neighbors (KNN)
+  - Support Vector Machines (SVM)
 
-Polynomial Regression: For non-linear relationships
-
-Ridge & Lasso Regression (L1 & L2): Regularization techniques to prevent overfitting
-
-Classification Models (Predicting Categories)
-Logistic Regression
-
-Naive Bayes (Gaussian, Multinomial, Bernoulli)
-
-Decision Tree
-
-K-Nearest Neighbors (KNN)
-
-Support Vector Machine (SVM)
-
-🧩 2. Unsupervised Learning
+### 3. Unsupervised Learning
 Models that find hidden patterns and structures in unlabeled data.
+- **K-Means Clustering**: Group data points into K distinct clusters.
 
-K-Means Clustering: Grouping data points into 'k' distinct clusters.
+---
 
-🛠️ Tech Stack
-This project is built using the standard Python data science and machine learning ecosystem.
+## 🛠 Tech Stack
 
-Languages: Python 3
+This project is built on the standard Python data science and machine learning ecosystem.
+- **Language**: Python 3
+- **Libraries**:  
+  - scikit-learn (For ML models and preprocessing)  
+  - pandas (For data manipulation)  
+  - numpy (For numerical operations)  
+  - matplotlib & seaborn (For data visualization)  
+  - category_encoders (For advanced encoding techniques)
+- **Environment**: Jupyter Notebook
 
-Libraries:
+---
 
-scikit-learn (for ML models and preprocessing)
+## 🚀 Getting Started
 
-pandas (for data manipulation)
-
-numpy (for numerical operations)
-
-matplotlib & seaborn (for data visualization)
-
-category_encoders (for advanced encoding techniques)
-
-Environment: Jupyter Notebook
-
-🚀 Getting Started
 To run these notebooks on your local machine, follow these steps.
 
-Clone the repository:
-
-Bash
-
-git clone https://github.com/nouman030/machine-learning-practice.git
+1. **Clone the repository:**
+```bash
+git clone https://github.com/yourusername/Machine-learning-practice.git
 cd machine-learning-practice
-Create a virtual environment (recommended):
+```
 
-Bash
+2. **Create a virtual environment (recommended):**
+```bash
+python -m venv .venv
+source .venv/Scripts/activate   # On Windows, use `.venv\Scripts\activate`
+```
 
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-Install the required dependencies:
-(You can create a requirements.txt file with the content below)
-
+3. **Install the required dependencies:**
+(Create a `requirements.txt` file with the content below)
+```
 pandas
 numpy
-scikit-learn
 matplotlib
 seaborn
+scikit-learn
 category_encoders
-jupyter
+```
+
 Then run:
-
-Bash
-
+```bash
 pip install -r requirements.txt
-Launch Jupyter Notebook:
+```
 
-Bash
-
+4. **Launch Jupyter Notebook:**
+```bash
 jupyter notebook
-Now you can navigate through the folders and run the notebooks!
+```
 
-📊 Example Output
-Here is an example of a Decision Tree visualization generated from the 6.decision_tree.ipynb notebook.
+You can now navigate through the folders and run the notebooks!
 
-Licensed by Google
+---
 
-⭐ Future Plans
-I plan to continuously expand this repository as my learning progresses.
+## 📊 Example Output
 
-[ ] Add more advanced algorithms and ensemble methods (e.g., Gradient Boosting, AdaBoost).
+Here is an example output of a **Decision Tree visualization**, generated from the `Decision_Tree.ipynb` notebook.
 
-[ ] Introduce Deep Learning concepts using PyTorch or TensorFlow.
+![Decision Tree](licensed-image.jfif)
 
-[ ] Work on end-to-end ML projects (e.g., Titanic Survival, House Price Prediction).
+---
 
-[ ] Explore concepts in Generative AI (Gen AI).
+## 🔮 Future Plans
+
+I plan to continuously expand this repository as my learning progresses:
+- [ ] Add more advanced algorithms and ensemble methods (e.g., Gradient Boosting, AdaBoost).
+- [ ] Incorporate Deep Learning concepts using PyTorch or TensorFlow.
+- [ ] Work on end-to-end ML projects (e.g., Titanic Survival, House Price Prediction).
+- [ ] Explore concepts in Generative AI (Gen AI).
