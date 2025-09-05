@@ -146,7 +146,7 @@ You can now navigate through the folders and run the notebooks!
 
 Here is an example output of a **Decision Tree visualization**, generated from the `Decision_Tree.ipynb` notebook.
 
-![Decision Tree](licensed-image.jfif)
+![Decision Tree](assets/licensed-image.jfif)
 
 ---
 
